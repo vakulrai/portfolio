@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vakul Rai — Senior Drupal & AI Engineer</title>
-<meta name="description" content="Acquia-certified Senior Drupal Engineer with 10+ years building enterprise Drupal 7–11 platforms, migrations, headless React/Next.js, API integrations and Drupal AI.">
+<meta name="description" content="Acquia-certified Senior Drupal Engineer with 10+ years building enterprise Drupal 7–11 platforms, migrations, headless React/Next.js, API integrations and Drupal AI. AI-native workflow with Claude Code and Cursor.">
 <meta property="og:title" content="Vakul Rai — Senior Drupal & AI Engineer">
-<meta property="og:description" content="10+ years of enterprise Drupal: upgrades, migrations, Acquia, headless, integrations and Drupal AI. Top Rated Plus on Upwork.">
+<meta property="og:description" content="10+ years of enterprise Drupal: upgrades, migrations, Acquia, headless, integrations and Drupal AI. AI-native with Claude Code and Cursor. Top Rated Plus on Upwork.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#070b16">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322d3ee'/><stop offset='1' stop-color='%238b5cf6'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='url(%23g)'/><text x='50%' y='55%' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='800' font-size='28' fill='white'>VR</text></svg>">
@@ -158,6 +158,35 @@ section{padding:110px 0}
 .tile .mini-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
 .tile .mini-tags span{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;padding:4px 9px;border-radius:7px;background:var(--surface2);border:1px solid var(--line);color:var(--muted)}
 
+/* ai-native */
+.ai-sec{position:relative;overflow:hidden}
+.ai-sec::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(700px 360px at 85% 10%,color-mix(in srgb,var(--c2) 16%,transparent),transparent 70%),radial-gradient(600px 320px at 5% 90%,color-mix(in srgb,var(--c1) 12%,transparent),transparent 70%)}
+.ai-tools{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ai-tool{position:relative;border-radius:var(--r);padding:1px;background:linear-gradient(150deg,color-mix(in srgb,var(--accent) 70%,transparent),var(--line) 45%,var(--line));transition:.3s}
+.ai-tool:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.ai-tool-in{height:100%;border-radius:calc(var(--r) - 1px);background:var(--surface);padding:30px 28px;display:flex;flex-direction:column}
+.ai-badge{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.ai-badge .lg{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;flex:none;color:#fff;background:var(--accent);box-shadow:0 10px 26px -10px var(--accent)}
+.ai-badge h3{font-size:22px}
+.ai-badge small{display:block;font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-weight:600;margin-top:3px}
+.ai-tool p{color:var(--muted);font-size:15px;margin-bottom:16px}
+.ai-tool ul{list-style:none;display:grid;gap:9px;margin-bottom:20px}
+.ai-tool li{position:relative;padding-left:22px;font-size:14.5px;line-height:1.55}
+.ai-tool li::before{content:"";position:absolute;left:0;top:7px;width:12px;height:8px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(-45deg) scale(.8)}
+.ai-flow-title{margin:64px 0 22px;font-size:22px}
+.ai-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.ai-step{padding:20px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line);transition:.25s}
+.ai-step:hover{border-color:var(--line2);transform:translateY(-3px)}
+.ai-step .k{font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--c1);font-weight:600}
+.ai-step h4{font-size:15.5px;margin:6px 0 6px}
+.ai-step p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.ai-step .with{display:block;margin-top:10px;font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:11px;color:var(--dim)}
+.ai-note{margin-top:28px;display:flex;gap:16px;align-items:flex-start;padding:22px 24px;border-radius:16px;border:1px dashed var(--line2);background:color-mix(in srgb,var(--ok) 6%,var(--surface))}
+.ai-note .ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;color:var(--ok);background:color-mix(in srgb,var(--ok) 16%,transparent)}
+.ai-note b{display:block;margin-bottom:2px}
+.ai-note p{color:var(--muted);font-size:14.5px}
+.trust .ai-pill{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:999px;font-weight:700;color:var(--text);background:linear-gradient(var(--surface),var(--surface)) padding-box,var(--grad) border-box;border:1px solid transparent}
+
 /* about */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
 .about-text p{color:var(--muted);margin-bottom:18px;font-size:17px}
@@ -281,6 +310,8 @@ footer a:hover{color:var(--text)}
   .exp{grid-template-columns:1fr}
   .exp-tabs{grid-template-columns:repeat(3,1fr)}
   .creds{grid-template-columns:repeat(2,1fr)}
+  .ai-tools{grid-template-columns:1fr}
+  .ai-flow{grid-template-columns:repeat(3,1fr)}
 }
 @media (max-width:680px){
   .wrap{padding:0 16px}
@@ -299,6 +330,8 @@ footer a:hover{color:var(--text)}
   .sec-head{grid-template-columns:1fr;gap:12px}
   .sec-num{font-size:44px}
   .bento,.projects,.creds{grid-template-columns:1fr}
+  .ai-flow{grid-template-columns:1fr 1fr}
+  .ai-flow-title{margin-top:48px}
   .proj.big{grid-column:span 1}
   .proj.big .metric{font-size:46px}
   .exp-tabs{grid-template-columns:1fr 1fr}
@@ -325,6 +358,7 @@ footer a:hover{color:var(--text)}
       <a href="#top" class="logo"><i>VR</i>Vakul Rai</a>
       <div class="links">
         <a href="#services">Services</a>
+        <a href="#ai">AI Workflow</a>
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#expertise">Expertise</a>
@@ -342,7 +376,7 @@ footer a:hover{color:var(--text)}
       </div>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#services">Services</a><a href="#about">About</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#process">Process</a><a href="#contact">Contact</a>
+      <a href="#services">Services</a><a href="#ai">AI Workflow</a><a href="#about">About</a><a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#process">Process</a><a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -354,7 +388,7 @@ footer a:hover{color:var(--text)}
       <div>
         <span class="pill reveal"><b>Available</b> Open to new Drupal &amp; AI projects</span>
         <h1 class="reveal">I build, rescue &amp; modernize <span class="grad">enterprise Drupal.</span></h1>
-        <p class="lead reveal">Hi, I'm Vakul, an <strong>Acquia-certified Senior Drupal Engineer</strong> with 10+ years of experience. I take over complex Drupal sites, fix what's broken, upgrade them safely to Drupal 10/11, and connect them to the APIs and AI tools your business runs on.</p>
+        <p class="lead reveal">Hi, I'm Vakul, an <strong>Acquia-certified Senior Drupal Engineer</strong> with 10+ years of experience. I take over complex Drupal sites, fix what's broken, upgrade them safely to Drupal 10/11, and connect them to the APIs and AI tools your business runs on. I work <strong>AI-native, with Claude Code and Cursor</strong> in my daily workflow, so you get faster delivery with the same senior-level review and testing.</p>
         <div class="cta reveal">
           <a href="https://www.upwork.com/freelancers/~01e8a129c3bc9c376f" target="_blank" rel="noopener" class="btn btn-primary">Hire me on Upwork
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
@@ -366,6 +400,8 @@ footer a:hover{color:var(--text)}
           <span>100% Job Success</span>
           <span class="sep"></span>
           <span>Acquia Certified</span>
+          <span class="sep"></span>
+          <span class="ai-pill">✦ Claude &amp; Cursor power user</span>
         </div>
       </div>
 
@@ -389,6 +425,7 @@ footer a:hover{color:var(--text)}
             <div class="line"><span class="ok">✔</span> Acquia Cloud · Site Factory · Site Studio</div>
             <div class="line"><span class="ok">✔</span> Headless React / Next.js over JSON:API</div>
             <div class="line"><span class="ok">✔</span> Drupal AI · LLM tools · MCP workflows</div>
+            <div class="line"><span class="ok">✔</span> AI-native dev with Claude Code &amp; Cursor</div>
             <div class="line"><span class="d">Package installed. Ready to ship.</span> <span class="caret"></span></div>
           </div>
         </div>
@@ -463,18 +500,97 @@ footer a:hover{color:var(--text)}
   </div>
 </section>
 
-<!-- 02 ABOUT -->
-<section id="about" class="band">
+<!-- 02 AI-NATIVE ENGINEERING -->
+<section id="ai" class="ai-sec">
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="sec-num">02</div>
+      <div><div class="eyebrow">AI-native engineering</div><h2 class="sec-title">I build with <span class="grad">Claude &amp; Cursor</span>, every day</h2><p class="sec-sub">AI isn't a buzzword on my profile. It's built into how I deliver. Claude and Cursor help me understand legacy code faster, ship cleaner changes and write more tests, while I stay accountable for every line.</p></div>
+    </div>
+
+    <div class="ai-tools">
+      <div class="ai-tool reveal" style="--accent:#d97757">
+        <div class="ai-tool-in">
+          <div class="ai-badge">
+            <div class="lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m4 17 6-6-6-6M12 19h8"/></svg></div>
+            <div><h3>Claude Code</h3><small>Agentic coding in the terminal</small></div>
+          </div>
+          <p>My go-to for deep, multi-file work on large Drupal codebases.</p>
+          <ul>
+            <li>Exploring and explaining unfamiliar legacy modules</li>
+            <li>Multi-file refactors and Drupal 7 → 11 upgrade work</li>
+            <li>Debugging production issues and tracing root causes</li>
+            <li>Writing PHPUnit and Playwright test coverage</li>
+            <li>AI-assisted code review before every merge</li>
+          </ul>
+          <div class="tags"><span class="tag">Claude Code</span><span class="tag">Agents</span><span class="tag">Code review</span></div>
+        </div>
+      </div>
+      <div class="ai-tool reveal" style="--accent:var(--c2)">
+        <div class="ai-tool-in">
+          <div class="ai-badge">
+            <div class="lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg></div>
+            <div><h3>Cursor</h3><small>AI-first IDE</small></div>
+          </div>
+          <p>My editor for fast, codebase-aware day-to-day development.</p>
+          <ul>
+            <li>Codebase-aware chat across modules, themes and configs</li>
+            <li>Inline edits for services, plugins, Twig and SDC</li>
+            <li>Rapid prototyping of React / Next.js front ends</li>
+            <li>Generating boilerplate, migrations and process plugins</li>
+            <li>Project rules that keep AI output to Drupal coding standards</li>
+          </ul>
+          <div class="tags"><span class="tag">Cursor</span><span class="tag">Agent mode</span><span class="tag">Project rules</span></div>
+        </div>
+      </div>
+      <div class="ai-tool reveal" style="--accent:var(--c1)">
+        <div class="ai-tool-in">
+          <div class="ai-badge">
+            <div class="lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l1.8 5.4L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.6z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+            <div><h3>Claude AI + MCP</h3><small>Planning, specs &amp; integrations</small></div>
+          </div>
+          <p>For thinking work and for wiring AI into real products.</p>
+          <ul>
+            <li>Architecture planning and technical estimates</li>
+            <li>API contract validation with OpenSpec</li>
+            <li>MCP servers connecting AI to Drupal and dev tools</li>
+            <li>Clear documentation, handover notes and runbooks</li>
+            <li>LLM features in Drupal as a Drupal AI core contributor</li>
+          </ul>
+          <div class="tags"><span class="tag">Claude</span><span class="tag">MCP</span><span class="tag">OpenSpec</span><span class="tag">Drupal AI</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="ai-flow-title reveal">Where AI fits in my delivery</h3>
+    <div class="ai-flow">
+      <div class="ai-step reveal"><span class="k">01</span><h4>Understand</h4><p>Map legacy code, modules and dependencies quickly.</p><span class="with">Claude Code</span></div>
+      <div class="ai-step reveal"><span class="k">02</span><h4>Plan &amp; spec</h4><p>Draft plans and validate API contracts up front.</p><span class="with">Claude · OpenSpec</span></div>
+      <div class="ai-step reveal"><span class="k">03</span><h4>Build</h4><p>Write and refactor code with full codebase context.</p><span class="with">Cursor · Claude Code</span></div>
+      <div class="ai-step reveal"><span class="k">04</span><h4>Test</h4><p>Generate PHPUnit and Playwright coverage, then run it.</p><span class="with">Claude Code</span></div>
+      <div class="ai-step reveal"><span class="k">05</span><h4>Review</h4><p>AI-assisted review for bugs, security and standards.</p><span class="with">Claude Code</span></div>
+      <div class="ai-step reveal"><span class="k">06</span><h4>Document</h4><p>Clear docs, release notes and handover guides.</p><span class="with">Claude</span></div>
+    </div>
+
+    <div class="ai-note reveal">
+      <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div><b>AI speeds things up. It doesn't replace engineering judgment.</b><p>I review every AI-assisted change, cover it with tests and ship it through your normal Git and CI process. I also follow your team's policies on which AI tools may be used with your code.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ABOUT -->
+<section id="about" class="band">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-num">03</div>
       <div><div class="eyebrow">About me</div><h2 class="sec-title">Enterprise Drupal, done carefully</h2></div>
     </div>
     <div class="about">
       <div class="about-text reveal">
         <p>For more than a decade I've architected and supported Drupal platforms across <strong>Drupal 7 through 11</strong>, from focused single sites to a 252-site Acquia multisite.</p>
         <p>I take <strong>senior-level ownership</strong> across planning, architecture, debugging, code review, deployment and documentation. Before changing anything, I take time to understand your existing code and setup.</p>
-        <p>You get <strong>clear estimates, regular updates and tested changes</strong>, backed by PHPUnit and Playwright end-to-end tests on your critical user journeys. I also use AI-assisted workflows with Claude Code for faster reviews, debugging and documentation.</p>
+        <p>You get <strong>clear estimates, regular updates and tested changes</strong>, backed by PHPUnit and Playwright end-to-end tests on your critical user journeys. I work <strong>AI-native with Claude Code and Cursor</strong>, using them for faster exploration, refactoring, test writing, reviews and documentation.</p>
         <div class="sectors">
           <span>Healthcare</span><span>Pharma</span><span>Government</span><span>Nonprofit</span><span>Finance</span><span>Utilities</span><span>Commerce</span>
         </div>
@@ -483,17 +599,17 @@ footer a:hover{color:var(--text)}
         <div class="hl reveal"><div class="n">252</div><div><h4>Large-scale multisite architecture</h4><p>Acquia multisite with Content Hub v1→v2 migration, Solr search, Okta SSO and CI/CD automation.</p></div></div>
         <div class="hl reveal"><div class="n">D11</div><div><h4>Modern migrations</h4><p>Full Drupal 11 migrations with custom process plugins and field mappings from legacy CMSs.</p></div></div>
         <div class="hl reveal"><div class="n">API</div><div><h4>Commerce &amp; API-driven backends</h4><p>Shared products and users, order and account flows, REST APIs and payment gateway integrations.</p></div></div>
-        <div class="hl reveal"><div class="n">AI</div><div><h4>AI in the workflow</h4><p>Claude AI and OpenSpec for code reviews, refactoring, documentation and API contract validation.</p></div></div>
+        <div class="hl reveal"><div class="n">AI</div><div><h4>AI-native workflow</h4><p>Claude Code, Cursor, Claude AI and OpenSpec for building, refactoring, testing, code review, documentation and API contract validation.</p></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 03 WORK -->
+<!-- 04 WORK -->
 <section id="work">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">03</div>
+      <div class="sec-num">04</div>
       <div><div class="eyebrow">Selected work</div><h2 class="sec-title">Case studies</h2><p class="sec-sub">Enterprise platforms I've built, migrated and supported across industries.</p></div>
     </div>
     <div class="filters reveal" id="filters">
@@ -638,11 +754,11 @@ footer a:hover{color:var(--text)}
   </div>
 </section>
 
-<!-- 04 EXPERTISE -->
+<!-- 05 EXPERTISE -->
 <section id="expertise" class="band">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">04</div>
+      <div class="sec-num">05</div>
       <div><div class="eyebrow">Toolbox</div><h2 class="sec-title">Technical expertise</h2></div>
     </div>
     <div class="exp reveal">
@@ -662,7 +778,7 @@ footer a:hover{color:var(--text)}
         <div class="pane" id="p3"><h3>Headless &amp; APIs</h3><p>Drupal as an API-first backend, integrated with the enterprise systems you already use.</p>
           <div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">JSON:API</span><span class="chip">REST</span><span class="chip">GraphQL-ready</span><span class="chip">Swagger / Apigee</span><span class="chip">Box API</span><span class="chip">HubSpot</span><span class="chip">Pardot</span><span class="chip">Workday / Taleo</span><span class="chip">Payment gateways</span></div></div>
         <div class="pane" id="p4"><h3>AI &amp; Automation</h3><p>Bringing practical AI into Drupal products and into the development workflow itself.</p>
-          <div class="chips"><span class="chip">Drupal AI module</span><span class="chip">LLM integration</span><span class="chip">AI chatbots</span><span class="chip">Semantic search</span><span class="chip">MCP workflows</span><span class="chip">Claude Code</span><span class="chip">OpenSpec</span><span class="chip">AI code review</span></div></div>
+          <div class="chips"><span class="chip">Drupal AI module</span><span class="chip">LLM integration</span><span class="chip">AI chatbots</span><span class="chip">Semantic search</span><span class="chip">MCP workflows</span><span class="chip">Claude Code</span><span class="chip">Cursor</span><span class="chip">Claude AI</span><span class="chip">OpenSpec</span><span class="chip">AI code review</span><span class="chip">AI-generated tests</span><span class="chip">Prompt engineering</span></div></div>
         <div class="pane" id="p5"><h3>DevOps &amp; Testing</h3><p>Reliable delivery pipelines and test coverage, so releases stay predictable.</p>
           <div class="chips"><span class="chip">Composer</span><span class="chip">Drush</span><span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">GitLab CI</span><span class="chip">Bitbucket</span><span class="chip">Jenkins</span><span class="chip">Pantheon</span><span class="chip">Platform.sh</span><span class="chip">DDEV</span><span class="chip">Lando</span><span class="chip">PHPUnit</span><span class="chip">Playwright</span><span class="chip">Xdebug</span></div></div>
         <div class="pane" id="p6"><h3>Search, Security &amp; Performance</h3><p>Fast, findable, accessible and secure: the things users and auditors notice.</p>
@@ -672,11 +788,11 @@ footer a:hover{color:var(--text)}
   </div>
 </section>
 
-<!-- 05 PROCESS -->
+<!-- 06 PROCESS -->
 <section id="process">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">05</div>
+      <div class="sec-num">06</div>
       <div><div class="eyebrow">How I work</div><h2 class="sec-title">A calm, predictable process</h2><p class="sec-sub">No surprises: you always know what's happening, what it costs and what comes next.</p></div>
     </div>
     <div class="timeline">
@@ -688,11 +804,11 @@ footer a:hover{color:var(--text)}
   </div>
 </section>
 
-<!-- 06 CREDENTIALS + FAQ -->
+<!-- 07 CREDENTIALS + FAQ -->
 <section class="band">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="sec-num">06</div>
+      <div class="sec-num">07</div>
       <div><div class="eyebrow">Credentials</div><h2 class="sec-title">Certified, rated &amp; involved</h2></div>
     </div>
     <div class="creds">
@@ -708,6 +824,7 @@ footer a:hover{color:var(--text)}
         <details class="reveal" open><summary>Can you take over an existing Drupal site someone else built?</summary><p>Yes, that's a large part of my work. I start by auditing the codebase, modules, hosting and deployment setup, then give you a clear picture of what's healthy, what's risky and what to fix first.</p></details>
         <details class="reveal"><summary>How do you make sure an upgrade doesn't break my site?</summary><p>Upgrades are planned in stages and covered by PHPUnit (Kernel/Functional) and Playwright end-to-end tests on your critical user journeys, so regressions are caught before anything reaches production.</p></details>
         <details class="reveal"><summary>Can you add AI features to my Drupal site?</summary><p>Yes. As a core contributor to Drupal AI, I build LLM-powered content tools, chatbots, semantic search and MCP-based workflows that fit into your existing Drupal setup.</p></details>
+        <details class="reveal"><summary>How do you use AI tools like Claude and Cursor on client work?</summary><p>Every day. I use Claude Code and Cursor to understand codebases faster, refactor, write tests, review changes and document work. Every AI-assisted change is reviewed by me, covered by tests and shipped through your normal Git and CI process, and I follow your team's policies on AI tool usage.</p></details>
         <details class="reveal"><summary>Do you work hourly or fixed-price?</summary><p>Both. I've delivered hourly and fixed-price contracts on Upwork. After a short call about your project, I'll suggest whichever fits the scope best.</p></details>
       </div>
     </div>
